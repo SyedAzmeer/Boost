@@ -1,0 +1,44 @@
+
+-- CREATE TABLE `offer` (
+--   `offer_code` BIGINT NOT NULL,
+--   `offer_name` varchar(80) DEFAULT NULL,
+--   `offer_discount_rate` decimal(4,2) DEFAULT NULL,
+--   `voucher_code` varchar(20),
+--   `created_by` varchar(60) DEFAULT NULL,
+--   `created_date` datetime DEFAULT NULL,
+--   `updated_by` varchar(60) DEFAULT NULL,
+--   `updated_date` datetime DEFAULT NULL,
+--   PRIMARY KEY (`offer_code`),
+--   FOREIGN KEY (voucher_code) REFERENCES voucher_detail(voucher_code)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+-- CREATE TABLE `voucher_detail` (
+--    `voucher_code` varchar(20) NOT NULL,
+--   `voucher_expired_date` datetime DEFAULT NULL,
+--   `voucher_status` tinyint DEFAULT 0,
+--    `created_by` varchar(60) DEFAULT NULL,
+--    `created_date` datetime DEFAULT NULL,
+--    `updated_by` varchar(60) DEFAULT NULL,
+--    `updated_date` datetime DEFAULT NULL,
+--    PRIMARY KEY (`voucher_code`)
+--  ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+-- CREATE TABLE recipient (
+--   recipient_id  BIGINT NOT NULL,
+--   recipient_email varchar(50) DEFAULT NULL,
+--   recipient_name varchar(80) DEFAULT NULL,
+--   voucher_code varchar(20),
+--   created_by varchar(60) DEFAULT NULL,
+--   created_date date DEFAULT NULL,
+--   updated_by varchar(60) DEFAULT NULL,
+--   updated_date date DEFAULT NULL,
+--   PRIMARY KEY (recipient_id),
+--   FOREIGN KEY (voucher_code) REFERENCES voucher_detail(voucher_code)
+--   )ENGINE=InnoDB DEFAULT CHARSET=latin1;
+-- -- 
+-- ALTER TABLE recipient
+-- ADD FOREIGN KEY (voucher_code) REFERENCES voucher_detail(voucher_code);
+
+

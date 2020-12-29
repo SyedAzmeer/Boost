@@ -49,7 +49,7 @@
                 </tr>
                 <tr align="center">
                     <td>
-                        <input type="button" id="btnSubmit" name="btnSubmit" onclick="invoke(1)" value="Validate voucher"> 
+                        <input type="button" id="btnSubmit" name="btnSubmit" onclick="invoke(1)" value="Validate Voucher"> <!-- edited by azmeer --> 
                     </td>
                 </tr>
                 <tr></tr>
